@@ -5,6 +5,8 @@ public class Computer {
     public int geheugenGB;
     public double prijs;
 
+	//Rudi is de beste	
+
     public String getNaam() {
         return naam;
     }

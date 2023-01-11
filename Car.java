@@ -7,6 +7,8 @@ public class Car {
 
 	//Constructor
 
+	// Rudi is de beste
+
 	public void ditIsMienMerk() {
 		System.out.println("Jouw merk is " + merk);
 	}
