@@ -1,23 +1,19 @@
-public class ArraySorteren{
-
+public class ArraySorteren {
 	public static void main(String[] args) {
-		int[] mijnArray = new int[] {5, 8, 1, 6, 3, 4, 9, 2, 7, 10};
-		for(int i = 0; i < mijnArray.length; i++) {
-			System.out.println(mijnArray[i]);
-		}
 
+	int[] arr = new int[] {5, 1, 9, 8, 4, 3, 10, 2, 7, 6};
+	System.out.println("Array elements after sorting:"); 
 		//Geen idee waarom deze ze niet juist sorteert
-		for(int i = 0; i < mijnArray.length; i++) {
-			for(int j = i + 1; j < mijnArray.length; j++) {
-				int temp = 0;
-				if(mijnArray[i] > mijnArray[j]) {
-					temp = mijnArray[i];
-					mijnArray[i] = mijnArray[j];
-					mijnArray[j] = mijnArray[i];					
-
+		for(int i = 0; i < arr.length; i++) {
+			for(int j = i + 1; j < arr.length; j++) {
+				int tmp = 0;
+				if(arr[i] > arr[j]) {
+					tmp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = tmp;					
 				}
 			}
-		System.out.println(mijnArray[i]);
+		System.out.println(arr[i]);
 		}
 	}
 }
